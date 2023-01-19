@@ -112,6 +112,8 @@
             this.txtSoloNumeros.Name = "txtSoloNumeros";
             this.txtSoloNumeros.Size = new System.Drawing.Size(175, 23);
             this.txtSoloNumeros.TabIndex = 8;
+            this.txtSoloNumeros.TextChanged += new System.EventHandler(this.txtSoloNumeros_TextChanged);
+            this.txtSoloNumeros.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoloNumeros_KeyPress);
             // 
             // label1
             // 
@@ -128,6 +130,8 @@
             this.txtSoloLetras.Name = "txtSoloLetras";
             this.txtSoloLetras.Size = new System.Drawing.Size(175, 23);
             this.txtSoloLetras.TabIndex = 10;
+            this.txtSoloLetras.TextChanged += new System.EventHandler(this.txtSoloLetras_TextChanged);
+            this.txtSoloLetras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoloLetras_KeyPress);
             // 
             // label2
             // 

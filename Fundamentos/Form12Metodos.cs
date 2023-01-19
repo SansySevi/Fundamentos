@@ -91,15 +91,7 @@ namespace Fundamentos
 
         private void txtSoloNumeros_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //LA TECLA PULSADA        
-            //e.KeyChar        
-            //DESACTIVA LAS ACCIONES POSTERIORES AL EVENTO       
-            //e.Handled = true;       
-            //DEBEMOS INDICAR QUE SI ES LA TECLA DE BORRAR,        
-            //TAMBIEN ESTE HABILITADO EL EVENTO       
-            //char teclaBorrar = (char)8;        
-            //EXISTE UNA ENUMERACION QUE NOS DEVUELVE        
-            //EL CODIGO DE CADA TECLA
+
             char teclaBorrar = (char) Keys.Back;
             if (char.IsDigit(e.KeyChar) == false && e.KeyChar != teclaBorrar)
             {
@@ -116,5 +108,14 @@ namespace Fundamentos
             }
         }
 
+        private void txtSoloNumeros_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSoloLetras_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
