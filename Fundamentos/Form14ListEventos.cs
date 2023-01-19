@@ -51,6 +51,7 @@ namespace Fundamentos
 
             Button boton = (Button)sender;
             boton.BackColor = Color.LightCoral;
+
             boton.Text = this.contador.ToString();
         }
 
