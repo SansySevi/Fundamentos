@@ -37,5 +37,25 @@ namespace Fundamentos
             this.lstDatos.Items.Add(persona.Nacionalidad + ","
                 + persona.Genero);
         }
+
+        private void btnCrearEmpleado_Click(object sender, EventArgs e)
+        {
+            //Empleado empleado = new Empleado();
+            //empleado.Nombre = "Empleado";
+            //empleado.Apellidos = "Empleado";
+            //this.lstDatos.Items.Add(empleado.GetNombreCompleto()
+            //    + ", Salario: " + empleado.GetSalarioMinimo());
+            //this.lstDatos.Items.Add(empleado.GetNombreCompleto()
+            //    + ", Vacaciones: " + empleado.GetDiasVacaciones());
+
+
+            Director director = new Director();
+            director.Nombre = "Dire";
+            director.Apellidos = "Dire";
+            this.lstDatos.Items.Add(director.GetNombreCompleto()
+                + ", Salario: " + director.GetSalarioMinimo());
+            this.lstDatos.Items.Add(director.GetNombreCompleto()
+                + ", Vacaciones: " + director.GetDiasVacaciones());
+        }
     }
 }
