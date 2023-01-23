@@ -17,7 +17,6 @@ namespace Fundamentos
         public Form21Files()
         {
             InitializeComponent();
-            
         }
 
         private async void btnReadFile_Click(object sender, EventArgs e)
@@ -32,7 +31,6 @@ namespace Fundamentos
 
                 //Dibujamos los datos en un listbox 
                 this.SetStringNombres(contenido);
-                
             }
         }
 

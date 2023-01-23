@@ -7,7 +7,7 @@ using ProyectoClases.Models;
 
 namespace ProyectoClases.Helpers
 {
-    internal class HelpersMascotas
+    public class HelpersMascotas
     {
         public List<Mascota> Mascotas { get; set; }
 
@@ -56,7 +56,7 @@ namespace ProyectoClases.Helpers
                 string temp = mascota.Nombre + "#" + mascota.Raza;
                 data += temp + ",";
             }
-            data.Trim(',');
+            data = data.Trim(',');
             return data;
         }
 
