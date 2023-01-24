@@ -39,11 +39,14 @@
             this.btnNuevaMascota = new System.Windows.Forms.Button();
             this.lstMascotas = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pcbMascotas = new System.Windows.Forms.PictureBox();
+            this.btnExaminar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMascotas)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardarDato
             // 
-            this.btnGuardarDato.Location = new System.Drawing.Point(274, 192);
+            this.btnGuardarDato.Location = new System.Drawing.Point(269, 126);
             this.btnGuardarDato.Name = "btnGuardarDato";
             this.btnGuardarDato.Size = new System.Drawing.Size(137, 41);
             this.btnGuardarDato.TabIndex = 15;
@@ -53,7 +56,7 @@
             // 
             // btnLeerDato
             // 
-            this.btnLeerDato.Location = new System.Drawing.Point(274, 144);
+            this.btnLeerDato.Location = new System.Drawing.Point(269, 78);
             this.btnLeerDato.Name = "btnLeerDato";
             this.btnLeerDato.Size = new System.Drawing.Size(137, 41);
             this.btnLeerDato.TabIndex = 14;
@@ -75,7 +78,7 @@
             // 
             this.txtEdad.Location = new System.Drawing.Point(23, 209);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(191, 23);
+            this.txtEdad.Size = new System.Drawing.Size(91, 23);
             this.txtEdad.TabIndex = 12;
             // 
             // label2
@@ -114,7 +117,7 @@
             // 
             // btnNuevaMascota
             // 
-            this.btnNuevaMascota.Location = new System.Drawing.Point(274, 97);
+            this.btnNuevaMascota.Location = new System.Drawing.Point(269, 31);
             this.btnNuevaMascota.Name = "btnNuevaMascota";
             this.btnNuevaMascota.Size = new System.Drawing.Size(137, 41);
             this.btnNuevaMascota.TabIndex = 16;
@@ -142,11 +145,31 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Mascotas";
             // 
+            // pcbMascotas
+            // 
+            this.pcbMascotas.Location = new System.Drawing.Point(152, 181);
+            this.pcbMascotas.Name = "pcbMascotas";
+            this.pcbMascotas.Size = new System.Drawing.Size(137, 83);
+            this.pcbMascotas.TabIndex = 19;
+            this.pcbMascotas.TabStop = false;
+            // 
+            // btnExaminar
+            // 
+            this.btnExaminar.Location = new System.Drawing.Point(295, 235);
+            this.btnExaminar.Name = "btnExaminar";
+            this.btnExaminar.Size = new System.Drawing.Size(114, 29);
+            this.btnExaminar.TabIndex = 20;
+            this.btnExaminar.Text = "Examinar";
+            this.btnExaminar.UseVisualStyleBackColor = true;
+            this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
+            // 
             // Form24ColeccionXMLMascotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 285);
+            this.Controls.Add(this.btnExaminar);
+            this.Controls.Add(this.pcbMascotas);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lstMascotas);
             this.Controls.Add(this.btnNuevaMascota);
@@ -160,6 +183,7 @@
             this.Controls.Add(this.txtNombre);
             this.Name = "Form24ColeccionXMLMascotas";
             this.Text = "Form24ColeccionXMLMascotas";
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMascotas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +202,7 @@
         private Button btnNuevaMascota;
         private ListBox lstMascotas;
         private Label label3;
+        private PictureBox pcbMascotas;
+        private Button btnExaminar;
     }
 }
